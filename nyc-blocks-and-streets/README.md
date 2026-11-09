@@ -123,6 +123,18 @@ for residential stock. ZIP codes are postal routes, not neighborhoods, and ZIP-l
 
 ### Mostafa Eltatawi, 13007048
 
+1. I'm working on the data cleaning part of our NYC housing and transportation project. For the Housing Maintenance Code Complaints dataset, I need to analyze housing repair durations. Some records have missing, negative, or unusually long repair times. How can I use the IQR method and a justified 365-day cap to detect and handle outliers without removing valid observations? Also, how should I document and justify these cleaning decisions in our Jupyter notebook?
+
+2. After integrating the housing and motor vehicle collision datasets using ZIP code × month, some records contain missing values due to the outer join. How should I handle these values during post-integration cleaning? Specifically, when should missing counts be replaced with zero, and when should undefined rates or repair durations remain NaN? How can I check for duplicate integration keys, inconsistent data types, and redundant columns to ensure the integrated dataset is reliable?
+
+3. For RQ7, I want to investigate whether ZIP codes with more dangerous streets experience longer housing repair times. Our Street Danger Index (SDI) measures pedestrian and cyclist casualties per 100 crashes. How can I divide ZIP codes into SDI quartiles and compare their average housing repair-closure durations using an interactive Plotly box plot? Please explain how to handle insufficient observations, label the chart clearly, and ensure the comparison is statistically meaningful.
+
+4. For RQ7, I am using Spearman rank correlation and the Kruskal–Wallis test to examine the relationship between street danger and housing repair durations. Why are these methods suitable for this analysis, what assumptions should I check, and how should I interpret the correlation coefficient and p-values? Help me explain the findings professionally while acknowledging that correlation does not imply causation.
+
+5. For RQ8, I want to determine whether crashes in high-housing-distress ZIP codes occur at different hours compared with low-distress ZIP codes. Our Housing Distress Index (HDI) measures urgent housing problems per complaining building. How can I classify ZIP codes into HDI quartiles, aggregate crashes by hour, and compare the highest and lowest quartiles using within-group percentages rather than raw counts? I also want an interactive Plotly line chart that highlights nighttime hours (20:00–05:59) and clearly communicates differences in hourly crash patterns. How should I validate the calculations and interpret any observed differences?
+
+6. Our interactive website is built using Python Dash and Plotly and includes RQ7 and RQ8 visualizations, KPI summary tiles, dropdown filters, and a Generate Report button. How can I verify that the charts and KPIs update correctly when users change borough, year, housing-problem category, or vehicle filters? How should I handle empty datasets, missing values, zero denominators, and insufficient observations? Please also help me document my cleaning methods, statistical analysis, visualization choices, findings, and limitations professionally in the notebook, ensuring the conclusions are supported by the actual data and no results are fabricated.
+
 
 ### Ahmed Raslan – Member 5 (13005475)
 
